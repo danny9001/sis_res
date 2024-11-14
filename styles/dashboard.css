@@ -1,0 +1,65 @@
+/* dashboard.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3b5998;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+#estadisticas, #eventos_proximos, #acciones_rapidas {
+    margin-bottom: 20px;
+}
+
+.stat {
+    background-color: #f1f1f1;
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 150px;
+}
+
+.stat p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.stat span {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.acciones .btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    margin: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #3b5998;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
