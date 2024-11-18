@@ -4,4 +4,4 @@ if (isset($_SESSION['usuario'])) {
 } else {
     echo "Inicia sesión o regístrate";
 }
-/>
+
