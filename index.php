@@ -1,21 +1,25 @@
 <?php
-require_once 'controllers/UsuarioController.php';
-require_once 'database/database.php';
+require_once 'autoload.php';
 
 $db = new Database();
-$usuarioController = new UsuarioController();
+$usuarioController = new UsuarioController($db);
 
-if (isset($_POST['usuario']) && isset($_POST['password'])) {
-    $usuario = $_POST['usuario'];
-    $password = $_POST['password'];
-    $resultado = $usuarioController->login($usuario, $password);
-    if ($resultado) {
-        // Login correcto
-    } else {
-        // Login incorrecto
+if (isset($_POST['accion'])) {
+    switch ($_POST['accion']) {
+        case 'login':
+            $usuarioController->login($_POST['usuario'], $_POST['password']);
+            break;
+        case 'registro':
+            $usuarioController->registro($_POST['usuario'], $_POST['password'], $_POST['nombre'], $_POST['apellido']);
+            break;
+        default:
+            echo "Acción no válida";
+            break;
     }
+} else {
+    // Carga la vista principal
+    require_once 'views/main.php';
 }
-require_once 'views/login.php';
 ?>
 <?php
 require_once 'controllers/UsuarioController.php';
