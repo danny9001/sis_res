@@ -1,29 +1,32 @@
-/eventos-reservas-sistema
-├── config/
-│   └── database.php                # Conexión a la base de datos
+proyecto/
 ├── controllers/
-│   ├── autenticar.php              # Controlador para autenticación de usuarios
-│   ├── reservas.php                # Controlador para operaciones de reservas
-│   └── usuarios.php                # Controlador para administración de usuarios
+│   ├── EventoController.php
+│   ├── InvitadoController.php
+│   ├── QRController.php
+│   ├── UsuarioController.php
+│   └── MesaController.php
+├── models/
+│   ├── Evento.php
+│   ├── Invitado.php
+│   ├── QR.php
+│   ├── Usuario.php
+│   └── Mesa.php
 ├── views/
-│   ├── dashboard.php               # Pantalla principal (dashboard)
-│   ├── acceso_restringido.php      # Pantalla de acceso restringido
-│   ├── login.php                   # Pantalla de inicio de sesión
-│   ├── nueva_reserva.php           # Pantalla para crear una nueva reserva
-│   ├── gestion_reservas.php        # Pantalla para gestión de reservas
-│   ├── gestion_invitados.php       # Pantalla para gestión de invitados
-│   ├── reportes.php                # Pantalla de reportes y estadísticas
-│   ├── administracion_usuarios.php # Pantalla para administración de usuarios (solo para administradores)
-│   └── reset_password.php          # Pantalla de restablecimiento de contraseña
-├── styles/
-│   ├── dashboard.css               # Estilos para el dashboard
-│   ├── acceso_restringido.css      # Estilos para la pantalla de acceso restringido
-│   └── main.css                    # Estilos generales del sistema
-├── scripts/
-│   ├── validar_formulario.js       # Scripts para validación de formularios
-│   └── lectura_qr.js               # Scripts para la lectura de códigos QR
-├── index.php                       # Redirecciona al login o al dashboard
-├── login.php                       # Página de inicio de sesión principal
-├── logout.php                      # Controlador para cerrar sesión
-└── README.md                       # Documentación del sistema
-└── Estructura.txt		    # Esturctura de archivos del proyecto
+│   ├── eventos.php
+│   ├── evento_detalle.php
+│   ├── invitados.php
+│   ├── login.php
+│   ├── registro.php
+│   ├── reservas.php
+│   ├── mesas.php
+│   └── qrcode.php
+├── database/
+│   └── config.php
+├── PHPQRCode/
+│   ├── qrlib.php
+│   └── ...
+├── header.php
+├── footer.php
+├── index.php
+├── estilo.css
+└── .htaccess
