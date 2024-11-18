@@ -2,7 +2,6 @@
 require_once 'models/Usuario.php';
 
 class UsuarioController {// controllers/UsuarioController.php
-class UsuarioController {
     private $db;
     
     public function __construct($db) {
