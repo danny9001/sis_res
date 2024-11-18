@@ -1,6 +1,4 @@
-Módulos del Sistema de Gestión de Eventos y Reservas
-
-Módulos del Sistema de Gestión de Eventos y Reservas
+Sistema de Gestión de Eventos y Reservas
 Roles en la Organización de Eventos
 - Administrador de Reservas: Responsable de gestionar todas las reservas. Sus tareas incluyen la edición, cancelación y modificación de las reservas existentes.
 - Encargado de Reservas: Actúa como el punto de contacto principal con los clientes. Se encarga de recibir los pagos correspondientes y de mantener actualizada la lista de invitados asociada a cada reserva.
@@ -36,5 +34,4 @@ Requisitos
 - Desarrollar un sistema OpenSource en PHP para hacer reservas de mesas en sectores.
 - El sistema debe ser personalizable en el módulo de parámetros con el número de sectores, mesas por sector y capacidad de personas por mesa.
 - Solo personas específicas encargadas de las reservas pueden hacer reservas y registrar a los asistentes.
-- Los clientes no pueden reservar directamente, solo los encargados de reservas una vez confirmado el pago de la misma.
-
+- Los clientes no pueden reservar directamente, solo los encargados de reservas una vez confirmado el pago de esta.
