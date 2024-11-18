@@ -1,6 +1,8 @@
 <?php
 require_once 'controllers/UsuarioController.php';
+require_once 'database/database.php';
 
+$db = new Database();
 $usuarioController = new UsuarioController();
 
 if (isset($_POST['usuario']) && isset($_POST['password'])) {
